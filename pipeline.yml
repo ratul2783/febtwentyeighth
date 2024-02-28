@@ -3,7 +3,7 @@ stages:
   jobs:
   - job: build
     steps:
-    - scripy: dotnet --version
+    - script: dotnet --version
     - script: dotnet restore
     - script: dotnet build
     - script: dotnet run
